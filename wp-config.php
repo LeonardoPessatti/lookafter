@@ -23,13 +23,13 @@
 define('DB_NAME', 'lookafter');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'leozito');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+define('DB_PASSWORD', 'root12345');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'mysql472.umbler.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
