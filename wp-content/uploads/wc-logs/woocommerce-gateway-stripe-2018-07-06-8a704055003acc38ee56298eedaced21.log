@@ -1,0 +1,221 @@
+2018-07-06T14:35:41+00:00 DEBUG 
+====Stripe Version: 4.1.7====
+====Start Log====
+customers/cus_DBgwXN7mrNbnD2/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2018-07-06T14:35:43+00:00 DEBUG 
+====Stripe Version: 4.1.7====
+====Start Log====
+customers/cus_DBgwXN7mrNbnD2/sources request: Array
+(
+    [limit] => 100
+)
+
+====End Log====
+
+
+2018-07-06T14:35:49+00:00 DEBUG 
+====Stripe Version: 4.1.7====
+====Start Log====
+sources/src_1ClJYHKYvNMRLRW1SotCEia6
+====End Log====
+
+
+2018-07-06T14:35:50+00:00 DEBUG 
+====Stripe Version: 4.1.7====
+====Start Log====
+Info: Begin processing payment for order 34 for the amount of 30.00
+====End Log====
+
+
+2018-07-06T14:35:50+00:00 DEBUG 
+====Stripe Version: 4.1.7====
+====Start Log====
+charges request: Array
+(
+    [currency] => brl
+    [amount] => 3000
+    [description] => Look After - Order 34
+    [capture] => true
+    [expand[]] => balance_transaction
+    [metadata] => Array
+        (
+            [customer_name] => Leonardo Pessatti
+            [customer_email] => lpessatti@gmail.com
+            [order_id] => 34
+        )
+
+    [customer] => cus_DBgwXN7mrNbnD2
+    [source] => src_1ClJYHKYvNMRLRW1SotCEia6
+)
+
+====End Log====
+
+
+2018-07-06T14:35:52+00:00 DEBUG 
+====Stripe Version: 4.1.7====
+====Start Log====
+Processing response: stdClass Object
+(
+    [id] => ch_1ClKK6KYvNMRLRW1bX8wrXIX
+    [object] => charge
+    [amount] => 3000
+    [amount_refunded] => 0
+    [application] => 
+    [application_fee] => 
+    [balance_transaction] => stdClass Object
+        (
+            [id] => txn_1ClKK7KYvNMRLRW17T5OKDkI
+            [object] => balance_transaction
+            [amount] => 769
+            [available_on] => 1531526400
+            [created] => 1530984954
+            [currency] => usd
+            [description] => Look After - Order 34
+            [exchange_rate] => 0.256279
+            [fee] => 52
+            [fee_details] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [amount] => 52
+                            [application] => 
+                            [currency] => usd
+                            [description] => Stripe processing fees
+                            [type] => stripe_fee
+                        )
+
+                )
+
+            [net] => 717
+            [source] => ch_1ClKK6KYvNMRLRW1bX8wrXIX
+            [status] => pending
+            [type] => charge
+        )
+
+    [captured] => 1
+    [created] => 1530984954
+    [currency] => brl
+    [customer] => cus_DBgwXN7mrNbnD2
+    [description] => Look After - Order 34
+    [destination] => 
+    [dispute] => 
+    [failure_code] => 
+    [failure_message] => 
+    [fraud_details] => stdClass Object
+        (
+        )
+
+    [invoice] => 
+    [livemode] => 
+    [metadata] => stdClass Object
+        (
+            [customer_name] => Leonardo Pessatti
+            [customer_email] => lpessatti@gmail.com
+            [order_id] => 34
+        )
+
+    [on_behalf_of] => 
+    [order] => 
+    [outcome] => stdClass Object
+        (
+            [network_status] => approved_by_network
+            [reason] => 
+            [risk_level] => normal
+            [seller_message] => Payment complete.
+            [type] => authorized
+        )
+
+    [paid] => 1
+    [receipt_email] => 
+    [receipt_number] => 
+    [refunded] => 
+    [refunds] => stdClass Object
+        (
+            [object] => list
+            [data] => Array
+                (
+                )
+
+            [has_more] => 
+            [total_count] => 0
+            [url] => /v1/charges/ch_1ClKK6KYvNMRLRW1bX8wrXIX/refunds
+        )
+
+    [review] => 
+    [shipping] => 
+    [source] => stdClass Object
+        (
+            [id] => src_1ClJYHKYvNMRLRW1SotCEia6
+            [object] => source
+            [amount] => 
+            [card] => stdClass Object
+                (
+                    [exp_month] => 5
+                    [exp_year] => 2020
+                    [address_line1_check] => pass
+                    [address_zip_check] => pass
+                    [brand] => Visa
+                    [card_automatically_updated] => 
+                    [country] => US
+                    [cvc_check] => 
+                    [fingerprint] => y99gNKlmcokJGRPX
+                    [funding] => credit
+                    [last4] => 4242
+                    [three_d_secure] => optional
+                    [tokenization_method] => 
+                    [dynamic_last4] => 
+                )
+
+            [client_secret] => src_client_secret_DBgwBAqklyGejMe82qvGnPAP
+            [created] => 1530984955
+            [currency] => 
+            [customer] => cus_DBgwXN7mrNbnD2
+            [flow] => none
+            [livemode] => 
+            [metadata] => stdClass Object
+                (
+                )
+
+            [owner] => stdClass Object
+                (
+                    [address] => stdClass Object
+                        (
+                            [city] => rio do oeste
+                            [country] => BR
+                            [line1] => carlos pessatti,36
+                            [line2] => 
+                            [postal_code] => 89180000
+                            [state] => SC
+                        )
+
+                    [email] => lpessatti@gmail.com
+                    [name] => Leonardo Pessatti
+                    [phone] => 
+                    [verified_address] => 
+                    [verified_email] => 
+                    [verified_name] => 
+                    [verified_phone] => 
+                )
+
+            [statement_descriptor] => 
+            [status] => chargeable
+            [type] => card
+            [usage] => reusable
+        )
+
+    [source_transfer] => 
+    [statement_descriptor] => 
+    [status] => succeeded
+    [transfer_group] => 
+)
+
+====End Log====
+
+
